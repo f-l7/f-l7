@@ -1,0 +1,5 @@
+<html><head><link rel="stylesheet" href="/static/css/style.css"></head><body>
+<div class="header">هويات مقبولة</div><div class="container">
+{% for id in identities %}<div style="border:1px solid white;margin:10px;padding:10px;">
+{{id.name}} | {{id.discord}}
+<a href="/admin/remove/{{id._id}}">رفض</a></div>{% endfor %}</div></body></html>

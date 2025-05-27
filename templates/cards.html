@@ -1,0 +1,4 @@
+<html><head><link rel="stylesheet" href="/static/css/style.css"></head><body>
+<div class="header">الهويات</div><div class="container">{% for id in identities %}
+<div style="border:1px solid white; margin:10px; padding:10px;">اسم: {{id.name}} | العمر: {{id.age}} | الديسكورد: {{id.discord}}</div>
+{% endfor %}</div></body></html>

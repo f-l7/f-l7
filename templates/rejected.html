@@ -1,0 +1,5 @@
+<html><head><link rel="stylesheet" href="/static/css/style.css"></head><body>
+<div class="header">هويات مرفوضة</div><div class="container">
+{% for id in identities %}<div style="border:1px solid white;margin:10px;padding:10px;">
+{{id.name}} | {{id.discord}}
+<a href="/admin/restore/{{id._id}}">قبول</a></div>{% endfor %}</div></body></html>
